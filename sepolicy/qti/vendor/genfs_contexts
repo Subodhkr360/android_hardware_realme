@@ -39,9 +39,6 @@ genfscon proc /oplus_rf    u:object_r:vendor_proc_engineer:s0
 # Fingerprint
 genfscon proc /fp_id    u:object_r:vendor_proc_fingerprint:s0
 
-# GPU
-genfscon sysfs /class/kgsl/kgsl-3d0    u:object_r:vendor_sysfs_kgsl:s0
-
 # Graphics
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/early_wakeup    u:object_r:vendor_sysfs_sde_crtc:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/sde-crtc-1/early_wakeup    u:object_r:vendor_sysfs_sde_crtc:s0
@@ -77,9 +74,6 @@ genfscon proc /oplus_secure_common    u:object_r:vendor_proc_oppo_secure_common_
 genfscon proc /sensor/als_cali                        u:object_r:vendor_proc_oplus_als_file:s0
 genfscon proc /sensor/pressure_cali                   u:object_r:vendor_proc_eng_cali_file:s0
 genfscon sysfs /devices/platform/soc/soc:sensor_fb    u:object_r:vendor_sysfs_sensor_fb:s0
-
-# Thermal
-genfscon sysfs /class/thermal/thermal_message    u:object_r:sysfs_thermal:s0
 
 # TOF
 genfscon sysfs /kernel/tof_control    u:object_r:vendor_sysfs_tof:s0
