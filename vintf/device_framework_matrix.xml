@@ -84,7 +84,7 @@
     </hal>
     <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.charger</name>
-        <version>1-9</version>
+        <version>1-10</version>
         <interface>
             <name>ICharger</name>
             <instance>default</instance>
@@ -263,6 +263,14 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
+        <name>vendor.oplus.hardware.secure_element</name>
+        <version>1</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
         <name>vendor.oplus.hardware.sendextcamcmd</name>
         <version>1-2</version>
         <interface>
@@ -358,6 +366,14 @@
         <interface>
             <name>IIrisFeature</name>
             <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.zeku.hardware.explorer</name>
+        <version>1.0</version>
+        <interface>
+            <name>IMmsProvider</name>
+            <instance>mms/explorer</instance>
         </interface>
     </hal>
 </compatibility-matrix>
